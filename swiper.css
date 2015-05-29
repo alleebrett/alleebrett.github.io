@@ -1,0 +1,29 @@
+/* Makes next picture appear when sliding */
+.swiper-container-vertical > .swiper-wrapper {
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* Adds 'page circle' at bottom of screen */
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+  touch-action: pan-x;
+}
+/* 'Page circle' make-up */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+}
+/* 'Page circle' clickable */
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+/* Turns active circle blue */
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #007aff;
+}
